@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/gse5/Zedboard/BOOT/fsbl.elf
+	/home/gse5/Zedboard/BOOT/zynq_design_1_wrapper.bit
+	/home/gse5/Zedboard/BOOT/u-boot.elf
+}

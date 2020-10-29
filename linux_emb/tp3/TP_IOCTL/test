@@ -1,0 +1,6 @@
+#mknod /dev/mydevice c 259 0
+insmod mydevice.ko
+./test_driver
+rmmod mydevice.ko
+dmesg|tail
+

@@ -1,0 +1,308 @@
+// ===============================================================================
+//                  Training
+//                  on 
+//                  IP & SoC Verification Methodology 
+//                  using UVM
+// ===============================================================================
+//                    Copyright (c) 2015 - AEDVICES Consulting
+// ===============================================================================
+// This material is provided as part of the training from AEDVICES Consulting,
+// The directory "opencores" contains open source codes from opencores.org
+// Other directories contains files and data developed by AEDVICES Consulting for 
+// training purposes.  
+// Personal copy is limited to training attendants.
+// Copy and duplication other than in the context of the training is not allowed.
+// ===============================================================================
+
+
+// Lab08 : Implement Test Sequences
+//---------------------------------------------------------------------------------------------------------
+// Goals: 
+//  Understand the concept of UVM test sequences
+//  Implement directed test sequences
+//  Implement random test sequences
+
+// forward declaration 
+// This sequence performs a byte access onto the APB
+// see apb_byte_access below
+typedef class apb_byte_access;
+
+typedef enum bit[1:0]{ ODD=2, EVEN=3, NONE=0 } test_parity_t;
+
+// LAB-TODO-STEP-1-a: implement a random init sequence
+class lab_uart_init_seq extends apb_sequence;
+
+  apb_byte_access req8; // a simple sequence to access to 1 byte on the APB.
+  rand bit[1:0] char_width;        // a two-bit value to configure the character width of the UART
+  rand test_parity_t parity;
+  rand bit[3:0] enable;
+  rand bit[15:0] freq_div;
+
+  `uvm_object_utils_begin(lab_uart_init_seq) // This is a UVM macro to register the class. Just use it as a template for now.
+     `uvm_field_int(char_width , UVM_DEFAULT | UVM_DEC)
+     `uvm_field_enum(test_parity_t , parity, UVM_DEFAULT)
+     `uvm_field_int(enable, UVM_DEFAULT | UVM_DEC)
+  `uvm_object_utils_end
+
+  covergroup my_cg;
+    coverpoint char_width;
+    coverpoint parity;
+    cross parity , char_width;
+  endgroup
+
+  function new(string name="");
+    super.new(name);
+    my_cg = new;
+  endfunction
+
+  constraint freq_div_c { freq_div inside {[1:10]};}
+  constraint parity_char_width_c {char_width == 3 -> parity == EVEN;}
+
+  task body();
+
+    `uvm_do_with(req8, { req8.address == `UART_LCR;                  req8.direction  == WRITE; req8.data[7] == 'b1; } );
+    `uvm_do_with(req8, { req8.address == `UART_IER_OR_DIVISOR_MSB;   req8.direction  == WRITE; req8.data  == (freq_div >> 8); } );
+    `uvm_do_with(req8, { req8.address == `UART_TX_RX_OR_DIVISOR_LSB; req8.direction  == WRITE; req8.data  == (freq_div & 4'h00ff); } );	  
+    `uvm_do_with(req8, { req8.address == `UART_LCR;                  req8.direction  == WRITE; req8.data  == {3'b000, parity, 1'b0, char_width}; } );
+    `uvm_do_with(req8, { req8.address == `UART_IER_OR_DIVISOR_MSB;   req8.direction  == WRITE; req8.data  == enable; } );
+    my_cg.sample();
+  endtask
+endclass
+
+class lab_uart_send_seqA extends apb_sequence;
+	`uvm_object_utils(lab_uart_send_seqA)
+ apb_byte_access req8;
+ rand int ii;
+ constraint ii_c { ii inside {[10:100]};}
+task body();
+    bit fifo_empty = 0;   
+    repeat(ii) begin
+      	`uvm_do_with(req8, { 
+                              req8.address           == `UART_TX_RX_OR_DIVISOR_LSB; // 0x00
+                              req8.direction         == WRITE;
+                            } 
+    );
+   `uvm_info("debug", $psprintf("data send: %s",req8.sprint()), UVM_NONE);
+    end
+    #400ns                       
+    //Poll register: UART_LSR 020
+    fifo_empty = 0;
+    while ( fifo_empty == 0 ) begin
+    	`uvm_do_with(req8 , { 
+                                req8.address            == `UART_LSR;
+                                req8.direction          == READ;
+
+                              } 
+         );      
+          
+         `uvm_info(get_type_name(),$psprintf("waiting for fifo empty received data: %b",req8.data),UVM_HIGH)   
+         if( (req8.data[5]) ==  1) 
+              fifo_empty = 1;
+      end //while
+      
+      // Some user message
+      `uvm_info(get_type_name(),"request done",UVM_LOW);
+ endtask  
+endclass
+
+// LAB-TODO-STEP-3-a: implement test sequence B
+class lab_uart_send_seqB extends apb_sequence;
+	`uvm_object_utils(lab_uart_send_seqB)
+ rand byte data_tx_rand;
+ apb_byte_access req8;
+ rand int ii;
+ constraint ii_c { ii inside {[10:100]};}
+task body();
+     bit fifo_empty = 0;  
+     while(ii>0) begin
+      	`uvm_do_with(req8, { 
+                              req8.address           == `UART_TX_RX_OR_DIVISOR_LSB; // 0x00
+                              req8.direction         == WRITE;
+                              req8.data              == data_tx_rand;
+                            } 
+     	);
+     	data_tx_rand += 'h01;
+   ` 	uvm_info("debug", $psprintf("data send: %s",req8.sprint()), UVM_NONE);
+	ii = ii-1;
+      #400ns                        
+    //Poll register: UART_LSR 020
+    fifo_empty = 0;
+    while ( fifo_empty == 0 ) begin
+    	`uvm_do_with(req8 , { 
+                                req8.address            == `UART_LSR;
+                                req8.direction          == READ;
+
+                              } 
+         );      
+          
+         `uvm_info(get_type_name(),$psprintf("waiting for fifo empty received data: %b",req8.data),UVM_HIGH)   
+         if( (req8.data[5]) ==  1) 
+              fifo_empty = 1;
+      end //while
+      end
+      // Some user message
+      `uvm_info(get_type_name(),"request done",UVM_LOW);
+ endtask  
+endclass
+// LAB-TODO-STEP-4-a: implement test sequence C
+
+class lab_uart_send_seqC extends apb_sequence;
+	`uvm_object_utils(lab_uart_send_seqC)
+lab_uart_init_seq init_seq;
+lab_uart_send_seqA seqA;
+lab_uart_send_seqB seqB;
+
+task body();
+	`uvm_do_with(init_seq, { init_seq.char_width == 'b11;} );
+
+	randcase 
+		10 :  `uvm_do(seqA)
+		90 :  `uvm_do(seqB)
+	endcase
+endtask 
+endclass
+
+
+class lab_uart_send_seqD extends apb_sequence;
+	`uvm_object_utils(lab_uart_send_seqD)
+lab_uart_init_seq init_seq;
+lab_uart_send_seqA seqA;
+lab_uart_send_seqB seqB;
+lab_uart_send_seqC seqC;
+
+task body();
+	`uvm_do(init_seq);
+
+	randcase 
+		25 :  `uvm_do(seqA)
+		25 :  `uvm_do(seqB)
+		25 :  `uvm_do(seqC)
+		25 :  `uvm_do(init_seq)
+	endcase
+endtask 
+endclass
+// LAB-TODO-STEP-5-a: create a derived class of apb_transfer
+// class lab_on_seq_transfer extends apb_transfer;
+//   `uvm_object_utils(lab_on_seq_transfer)
+//   
+//   function new(string name="lab_on_seq_transfer");
+//     super.new(name);
+//   endfunction
+//   
+//   constraint lab_on_seq_delay_constraint {
+//     delay == 1;
+//   }
+// endclass
+
+
+//--------------------------------------------------------------------------------
+// Sequence lab_on_seq_test_sequence
+//
+class lab_on_seq_test_sequence extends uart_ip_verif_base_sequence;
+    `uvm_object_utils(lab_on_seq_test_sequence)
+  
+    apb_byte_access req8;
+
+    rand byte data_tx;
+
+	rand bit [1:0] char_width;
+	
+    // LAB-TODO-STEP-1-c: uncomment the following line
+    //lab_uart_init_seq init_seq;
+  
+    // LAB-TODO-STEP-2-c: instantiate the test sequence A
+    lab_uart_send_seqD send_data_seq;
+    rand int count;
+    constraint count_c { 
+		count > 10 && count <= 100; 
+		//count == 1;
+	}
+    rand int ii;
+    constraint ii_c { ii inside {[10:100]};}
+    constraint test_control_c { test_control == 1;}
+    
+    // Task Body
+    virtual task body();
+      bit fifo_empty = 0;
+      starting_phase.raise_objection(this);
+            
+   
+      // Some user message
+      `uvm_info(get_type_name(),"starting",UVM_LOW);
+      
+    // LAB-TODO-STEP-1-d:  uncomment the following line
+     //`uvm_do(init_seq);
+    // init_seq.print();
+      
+      
+      //--------------------
+      // UART Init Start
+      //--------------------
+      // LAB-TODO-STEP-1-b: replace the following with `uvm_do(init_seq)
+      //`umv_do(init_seq);
+     // Set bit 7 of LCR to 1 so that we can programm the Divisor Latch
+
+      //--------------------
+      // Transmit Data
+      //--------------------
+      
+      // LAB-TODO-STEP-2-d: call the sub sequence
+      //send_data_seq.randomize();
+	repeat (10) begin 
+	      `uvm_do(send_data_seq);
+	end
+
+      starting_phase.drop_objection(this);
+
+      
+    endtask // Body
+    
+endclass // lab_on_seq_test_sequence
+
+
+
+///////////////////////////////////:
+// This sequence performs a byte access onto the APB
+class apb_byte_access extends apb_sequence;
+  rand apb_address_t address;     ///< register address 
+  rand byte data;                 ///< register data to write
+  rand apb_direction_t direction; ///< Direction APB_READ or WRITE
+  
+  
+  // UVM factory settings
+  `uvm_object_utils_begin(apb_byte_access)
+    `uvm_field_int(address   , UVM_DEFAULT)
+    //`uvm_field_int(data      , UVM_DEFAULT)
+    `uvm_field_enum(apb_direction_t , direction , UVM_DEFAULT)
+  `uvm_object_utils_end
+
+  // constructor
+  function new(string name="apb_byte_access");
+    super.new(name);
+  endfunction
+  
+  // Sequence Body
+  virtual task body();
+    
+    `uvm_do_with( 
+        // object to generate
+        req , 
+        // constraint on the object
+        {
+        req.address           == local::address;
+        req.direction         == local::direction;
+        if ( direction == WRITE )
+          req.data              == ( apb_data_t'(local::data) << ((local::address%4)*8) );
+        req.sel               == 0;
+        req.prot              == 3'b000;
+        req.strobe            == (1'b1 << (local::address%4));
+        req.full_access       == 0;
+      })
+    
+    `uvm_info(get_name(),$psprintf("Req.data = 0x%02x",req.data),UVM_NONE)
+    if ( direction == READ ) 
+      this.data = ( req.data >>  ((this.address%4)*8) );
+  endtask
+  
+endclass
+

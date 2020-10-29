@@ -1,0 +1,49 @@
+
+//---------------------------------------------------------------------
+/// Test: lab_scoreboard
+/// Note: should have the same name as filename.sv    
+class lab_test extends uart_ip_verif_base_test;
+  `uvm_component_utils(lab_test)
+
+  lab_scoreboard my_scoreboard;
+    
+  function new(string name="lab_test",uvm_component parent=null);
+    super.new(name,parent);
+  endfunction
+    
+  virtual function void build_phase(uvm_phase phase);
+    
+    `uvm_info(get_name(), $sformatf("Setting default sequence verif_env0.apb_env0.masters0.sequencer.run_phase"), UVM_LOW)
+      // Use the UVM configuration database feature to set the main test sequence of the apb master agent.
+      uvm_config_db#(uvm_object_wrapper)::set(this, 
+        "verif_env0.apb_env0.master0.sequencer.run_phase", 
+        "default_sequence", 
+        lab_test_sequence::type_id::get());   
+      
+      super.build_phase(phase);
+      
+      my_scoreboard = lab_scoreboard::type_id::create("lab_scoreboard",this);
+      
+  endfunction
+    
+  // Run Phase
+  // This phase is called once every component has been built.
+  virtual task run_phase(uvm_phase phase);
+    `uvm_info("lab_test","Starting run_phase()",UVM_LOW)
+      // allow some time after the main sequence so that the UART can send data      
+     phase.phase_done.set_drain_time(this, 5000);
+    
+  endtask
+
+
+  // Connect Phase
+  virtual function void connect_phase(uvm_phase phase);
+    super.connect_phase(phase);
+    // LAB-TODO-STEP-2-d    
+    verif_env0.apb_env0.masters[0].monitor.completed_transfer_port.connect(my_scoreboard.apb_import);
+    verif_env0.uart_env0.agents["uart_agent0"].tx_monitor.completed_byte.connect(my_scoreboard.tx_frame_import);
+
+  endfunction
+
+endclass
+

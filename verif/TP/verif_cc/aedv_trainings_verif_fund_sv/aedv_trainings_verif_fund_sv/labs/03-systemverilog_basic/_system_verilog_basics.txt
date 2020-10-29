@@ -1,0 +1,3 @@
+Objectives:
+- Understand the basics usage of SystemVerilog “Programs”
+- Understand the how aggregate data types work

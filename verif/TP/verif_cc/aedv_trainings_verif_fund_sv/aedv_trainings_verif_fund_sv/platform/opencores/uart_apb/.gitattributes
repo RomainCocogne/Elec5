@@ -1,0 +1,6 @@
+*.sv  ident
+*.svh ident
+*.vhd ident
+*.c   ident
+*.h   ident
+*akefile ident

@@ -1,0 +1,161 @@
+// ===============================================================================
+// Copyright (c) 2015-2019 - AEDVICES Consulting
+// ===============================================================================
+//                     Training
+//                        on
+//            Functional Verification Methodology
+//                     using UVM
+// ===============================================================================
+// This material is provided as part of the training from AEDVICES Consulting,
+// The directory "opencores" contains open source codes from opencores.org
+// Other directories contains files and data developed by AEDVICES Consulting for
+// training purposes.
+// Personal copy is limited to training attendants.
+// Copy and duplication other than in the context of the training is not allowed.
+// ===============================================================================
+
+
+// Lab : SystemVerilog Basics - Simple Constraints
+//--------------------------------------------------------------------------------
+// Goals:
+//      - Be familiar with random variables and simple constraints. 
+//--------------------------------------------------------------------------------
+// File: lab_prog.sv
+// Description: This file contains a program that uses the classes in the project_utils_pkg.sv
+//             to drive and monitor the DUT signals. In this lab, the student will use random
+//             variables generation  and constraints to generate sequences used to drive the DUT
+
+  import lab_verif_pkg::*;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// LAB - MAIN
+/////////////////////////////////////////////////////////////////////////////////////////////////
+program lab_prog(
+    input clock,
+    input reset_n,
+    output data_t           addr,
+    input  data_t           in_data,
+    output direction_t      dir,
+    output action_t         action,
+    output data_t           out_data
+      );
+
+
+  /// This class contains a list of transactions
+  /// that we want to drive.
+  /// This describe a specific sequence where we want:
+  /// First transaction to be WRITE at address 5
+  /// Second transaction to use the same data as the first
+  /// All actions are ACC
+  class test_sequence;
+    // LAB-TODO-STEP-4-b - add the rand keyword
+    rand adderTransaction trans[10];
+
+    extern function new();
+
+    constraint my_test_c {
+        // LAB-TODO-STEP-4-c - 
+        foreach ( trans[ii] ) {
+		ii == 0 -> (trans[ii].addr == 1 && trans[ii].dir == WRITE);
+		ii == 1 -> (trans[ii].data == trans[ii-1].data);
+          trans[ii].action == ACC;
+        }
+
+    }
+  endclass
+
+
+  // Drive all signals from a transaction
+  task drive(transactionBase T); 
+    { addr , dir , action , out_data } = { T.addr , T.dir , T.action , T.data };
+    @(posedge clock); 
+    if ( dir == READ )  T.data  = in_data; // read data 
+    T.print(); // print into the log after driving the transaction
+  endtask
+
+
+  // Declare the two transactions we are going to randomize
+  transactionBase    trans_base;
+  adderTransaction   trans_adder;
+  test_sequence      my_seq;
+
+
+  initial
+  begin
+    bit ok;
+    // Wait for reset
+    @(reset_n);
+    @(posedge clock);
+
+    // Create two transactions
+    trans_base = new;
+    trans_adder = new;
+    my_seq      = new;
+
+    
+
+    $display("----------------- TRANS 1 -------------------");
+
+    // LAB-TODO-STEP-3-a
+    // A random base transaction 
+    ok = trans_base.randomize();
+    if ( ! ok ) 
+      $display("Error randomizing trans_base");
+    drive(trans_base);
+
+
+    $display("----------------- TRANS 2 -------------------"); 
+
+    // A random Adder transaction 
+    ok = trans_adder.randomize();
+    if ( ! ok ) 
+      $display("Error randomizing trans_adder");
+    drive(trans_adder);
+
+
+
+    $display("----------------- TRANS 3 -------------------"); 
+    // LAB-TODO-STEP-3-b - Add a constraint to read at address 4
+    ok = trans_adder.randomize() with { addr == 'h4 -> trans_adder.dir==READ; };
+    if ( ! ok ) 
+      $display("Error randomizing trans_adder");
+    drive(trans_adder);
+    
+
+
+
+    $display("----------------- TRANS 4 -------------------"); 
+    // LAB-TODO-STEP-3-c
+    ok = trans_adder.randomize() with {
+      trans_adder.dir    == WRITE;
+      trans_adder.addr   == 'h4; 
+    };
+    if ( ! ok ) 
+      $display("Error randomizing trans_adder");
+    drive(trans_adder);
+
+
+    $display("----------------- SEQ 5 -------------------"); 
+    // LAB-TODO-STEP-4-a
+    ok = my_seq.randomize();
+    if ( ! ok ) 
+      $display("Error randomizing test_sequence");
+    foreach ( my_seq.trans[ii] )
+      drive(my_seq.trans[ii]);
+
+    $display("-------------------------------------------"); 
+    $display("Simulation end");
+    $finish;
+
+
+
+  end // initial
+
+
+
+
+    function test_sequence::new();
+      foreach ( trans[ii] ) trans[ii] = new;
+    endfunction 
+endprogram
+

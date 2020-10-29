@@ -1,0 +1,1 @@
+cmd_/home/gse5/Zedboard/source/led_driver/leds.ko := arm-linux-gnueabihf-ld -r  -EL -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/gse5/Zedboard/source/led_driver/leds.ko /home/gse5/Zedboard/source/led_driver/leds.o /home/gse5/Zedboard/source/led_driver/leds.mod.o ;  true

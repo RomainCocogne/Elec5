@@ -1,0 +1,433 @@
+# Reading C:/tools/mentor/questasim64_10.7a/tcl/vsim/pref.tcl
+# //  Questa Sim-64
+# //  Version 10.7a win64 Mar 27 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do sim.do
+# 3
+# settings up directory variables
+# C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/tools/utils/windows
+# ARCH = windows
+# ===========================================
+# =        VERIFICATION LAB                ==
+# ===========================================
+# = Copyright (c) 2014 - Francois Cerisier - AEDVICES Consulting
+# = OpenCores source codes under C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores is distributed as is as a copy from opencores.org under GNU LGPL license
+# = Tools directory delivered as is under Mentor Graphics free license
+# ===========================================
+# Main Training Commands: 
+#     aed_gui    : Open the training compilation and simulation GUI
+#     sanity_uvm : Run sanity check for UVM testbench
+#     sanity_soc : Run sanity check for SoC testbench
+# Test set to C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/TP-UVM_Sequences/lab.sv
+# ========================
+# Compiling RTL
+# ========================
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/raminfr.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:29 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/raminfr.v 
+# -- Compiling module raminfr
+# 
+# Top level modules:
+# 	raminfr
+# End time: 09:55:29 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_top.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:29 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_top.v 
+# -- Compiling module uart_top
+# 
+# Top level modules:
+# 	uart_top
+# End time: 09:55:29 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_debug_if.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:30 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_debug_if.v 
+# -- Compiling module uart_debug_if
+# 
+# Top level modules:
+# 	uart_debug_if
+# End time: 09:55:31 on Oct 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_receiver.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:32 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_receiver.v 
+# -- Compiling module uart_receiver
+# 
+# Top level modules:
+# 	uart_receiver
+# End time: 09:55:33 on Oct 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_regs.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:33 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_regs.v 
+# -- Compiling module uart_regs
+# 
+# Top level modules:
+# 	uart_regs
+# End time: 09:55:34 on Oct 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_rfifo.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:34 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_rfifo.v 
+# -- Compiling module uart_rfifo
+# 
+# Top level modules:
+# 	uart_rfifo
+# End time: 09:55:34 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_sync_flops.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:34 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_sync_flops.v 
+# -- Compiling module uart_sync_flops
+# 
+# Top level modules:
+# 	uart_sync_flops
+# End time: 09:55:34 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_tfifo.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:34 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_tfifo.v 
+# -- Compiling module uart_tfifo
+# 
+# Top level modules:
+# 	uart_tfifo
+# End time: 09:55:35 on Oct 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_transmitter.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:35 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_transmitter.v 
+# -- Compiling module uart_transmitter
+# 
+# Top level modules:
+# 	uart_transmitter
+# End time: 09:55:35 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_wb.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:35 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_wb.v 
+# -- Compiling module uart_wb
+# 
+# Top level modules:
+# 	uart_wb
+# End time: 09:55:36 on Oct 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:36 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge.v 
+# -- Compiling module apb2wb_bridge
+# 
+# Top level modules:
+# 	apb2wb_bridge
+# End time: 09:55:36 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog +acc +cover=bcesfx -coveropt 1  -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design//uart_apb//uart_apb.v
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:36 on Oct 11,2019
+# vlog -reportprogress 300 "+acc" "+cover=bcesfx" -coveropt 1 -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/uart_apb/uart_apb.v 
+# -- Compiling module uart_apb
+# 
+# Top level modules:
+# 	uart_apb
+# End time: 09:55:37 on Oct 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ========================
+# Compiling Testbench
+# ========================
+# C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/TP-UVM_Sequences/uart_ip_tb.sv
+# vlog +acc=mnprt -work work -timescale 1ns/10ps  +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/registers/ids +incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge +define+IMPORT_LAB_PKG  C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/aed_uart_pkg.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/aed_apb_pkg.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_pkg.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_pkg.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/TP-UVM_Sequences/lab.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_tb.sv
+# QuestaSim-64 vlog 10.7a Compiler 2018.03 Mar 27 2018
+# Start time: 09:55:39 on Oct 11,2019
+# vlog -reportprogress 300 "+acc=mnprt" -work work -timescale 1ns/10ps "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv" "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv" "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl" "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb" "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/registers/ids" "+incdir+C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge" "+define+IMPORT_LAB_PKG" C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/aed_uart_pkg.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/aed_apb_pkg.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_pkg.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_pkg.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/TP-UVM_Sequences/lab.sv C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_tb.sv 
+# -- Compiling package aed_uart_pkg
+# ** Note: (vlog-2286) C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/aed_uart_pkg.sv(55): Using implicit +incdir+C:/tools/mentor/questasim64_10.7a/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling package aed_apb_pkg
+# -- Compiling package apb2wb_pkg
+# -- Compiling package uart_ip_verif_pkg
+# -- Importing package aed_uart_pkg
+# -- Importing package aed_apb_pkg
+# -- Compiling package lab_test_pkg
+# -- Importing package uart_ip_verif_pkg
+# -- Compiling package uart_ip_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface apb_if
+# -- Compiling interface uart_line_if
+# -- Compiling interface uart_if
+# -- Compiling module uart_tb
+# -- Importing package aed_apb_pkg
+# -- Importing package uart_ip_verif_pkg
+# -- Importing package aed_uart_pkg
+# -- Importing package apb2wb_pkg
+# 
+# Top level modules:
+# 	uart_tb
+# End time: 09:55:50 on Oct 11,2019, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0
+# vsim -t 100ps -coverage -msgmode both -uvmcontrol=all -classdebug -solvefaildebug=2 uart_tb +define+IMPORT_LAB_PKG lab_test_pkg +UVM_TESTNAME=lab_test -sv_seed 3
+# vsim -t 100ps -coverage -msgmode both -uvmcontrol=all -classdebug -solvefaildebug=2 uart_tb "+define+IMPORT_LAB_PKG" lab_test_pkg "+UVM_TESTNAME=lab_test" -sv_seed 3 
+# Start time: 09:55:54 on Oct 11,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Design loading; command ignored.
+# Loading work.apb2wb_pkg(fast)
+# Loading work.apb_if(fast)
+# Loading work.aed_apb_pkg(fast)
+# Loading work.uart_line_if(fast)
+# Loading work.uart_if(fast)
+# Loading work.aed_uart_pkg(fast)
+# Loading work.uart_ip_verif_pkg(fast)
+# Loading work.uart_ip_tb_sv_unit(fast)
+# Loading work.uart_tb(fast)
+# Loading work.apb_if(fast)
+# Loading work.uart_if(fast)
+# Loading work.uart_line_if(fast)
+# Loading work.uart_apb(fast)
+# Loading work.apb2wb_bridge(fast)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# Loading work.lab_test_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (3) for port 'PPROT_i'. The port definition is at: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/uart_apb/uart_apb.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/uart0 File: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_tb.sv Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'PSEL_i'. The port definition is at: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/uart_apb/uart_apb.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/uart0 File: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_tb.sv Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (32) for port 'PRDATA_o'. The port definition is at: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/uart_apb/uart_apb.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/uart0 File: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_tb.sv Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'wb_adr_i'. The port definition is at: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_top.v(144).
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/uart0/uart0 File: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/design/uart_apb/uart_apb.v Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (11) does not match connection size (5) for port 'data_o'. The port definition is at: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_regs.v(241).
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/uart0/uart0/regs File: C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_top.v Line: 280
+# Loading C:/tools/mentor/questasim64_10.7a/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(all)
+# (uart_tb.uart0.uart0) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (uart_tb.uart0.uart0) UART INFO: Doesn't have baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test lab_test...
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_test.svh(35) @ 0: uvm_test_top [uvm_test_top] Setting default sequence uvm_wb_env0.masters0.sequencer.run_phase
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_env.sv(36) @ 0: uvm_test_top.verif_env0.apb_env0 [DEBUG] APB env build_phase
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_agent.sv(36) @ 0: uvm_test_top.verif_env0.apb_env0.master0 [master0] Agent Build Phase
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_test.svh(49) @ 0: uvm_test_top [lab_test] Starting run_phase()
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_line_monitor.sv(53) @ 0: uvm_test_top.verif_env0.uart_env0.uart_agent0.tx_monitor [tx_monitor] Monitor Starting...
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_line_monitor.sv(53) @ 0: uvm_test_top.verif_env0.uart_env0.uart_agent0.rx_monitor [rx_monitor] Monitor Starting...
+# **************************************************************************
+# * Questa UVM Transaction Recording Turned ON.                            *
+# * recording_detail has been set.                                         *
+# *  To turn off, set 'recording_detail' to off:                           *
+# * uvm_config_db#(int)            ::set(null, "", "recording_detail", 0); *
+# * uvm_config_db#(uvm_bitstream_t)::set(null, "", "recording_detail", 0); *
+# **************************************************************************
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.sv(37) @ 0: uvm_test_top.verif_env0.apb_env0.master0.monitor [monitor] Monitor Starting...
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(117) @ 0: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence [lab_on_seq_test_sequence] starting
+# Make sure you have traced all signals you want to see before you run
+# Type 'run -all' to start simulation
+# When completed, don't click on finish as it will close the simulation
+# Break key hit
+run -all
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.sv(194) @ 1000: uvm_test_top.verif_env0.apb_env0.master0.monitor [monitor] Getting in reset
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.sv(60) @ 1000: uvm_test_top.verif_env0.apb_env0.master0.monitor [monitor] monitor_apb_bus() : reset asserted, stopping monitoring
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.sv(83) @ 1000: uvm_test_top.verif_env0.apb_env0.master0.monitor [DEBUG] monitor_apb_bus() : disable fork, monitoring stopped
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.sv(188) @ 1945: uvm_test_top.verif_env0.apb_env0.master0.monitor [monitor] Exiting reset
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.sv(71) @ 1945: uvm_test_top.verif_env0.apb_env0.master0.monitor [monitor] Ready to Monitor APB transfers
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_config_monitor.svh(132) @ 4445: uvm_test_top.verif_env0.config_monitor0 [config_monitor0] New config detected: 
+# -----------------------------------------------------------
+# Name              Type                      Size  Value    
+# -----------------------------------------------------------
+# <unnamed>         uart_config               -     @499     
+#   parity          uart_parity_t             32    NONE     
+#   size            uart_frame_size_t         32    bits_5   
+#   stop_format     uart_frame_stop_format_t  32    stop_1   
+#   min_baud_rate   integral                  32    'd2500000
+#   max_baud_rate   integral                  32    'd2500000
+#   baud_rate       integral                  32    'd2500000
+#   min_interframe  integral                  32    'h8      
+#   max_interframe  integral                  32    'h56     
+#   illegal_frame   integral                  1     'd0      
+# -----------------------------------------------------------
+# 
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 4445: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.init_seq.req8 [req8] Req.data = 0x80000000
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 6445: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.init_seq.req8 [req8] Req.data = 0x01
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 7945: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.init_seq.req8 [req8] Req.data = 0x00
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_config_monitor.svh(132) @ 10695: uvm_test_top.verif_env0.config_monitor0 [config_monitor0] New config detected: 
+# -----------------------------------------------------------
+# Name              Type                      Size  Value    
+# -----------------------------------------------------------
+# <unnamed>         uart_config               -     @499     
+#   parity          uart_parity_t             32    NONE     
+#   size            uart_frame_size_t         32    bits_5   
+#   stop_format     uart_frame_stop_format_t  32    stop_1   
+#   min_baud_rate   integral                  32    'd2500000
+#   max_baud_rate   integral                  32    'd2500000
+#   baud_rate       integral                  32    'd2500000
+#   min_interframe  integral                  32    'h8      
+#   max_interframe  integral                  32    'h56     
+#   illegal_frame   integral                  1     'd0      
+# -----------------------------------------------------------
+# 
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 10695: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.init_seq.req8 [req8] Req.data = 0x00
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_config_monitor.svh(132) @ 11945: uvm_test_top.verif_env0.config_monitor0 [config_monitor0] New config detected: 
+# -----------------------------------------------------------
+# Name              Type                      Size  Value    
+# -----------------------------------------------------------
+# <unnamed>         uart_config               -     @499     
+#   parity          uart_parity_t             32    ODD      
+#   size            uart_frame_size_t         32    bits_5   
+#   stop_format     uart_frame_stop_format_t  32    stop_1   
+#   min_baud_rate   integral                  32    'd2500000
+#   max_baud_rate   integral                  32    'd2500000
+#   baud_rate       integral                  32    'd2500000
+#   min_interframe  integral                  32    'h8      
+#   max_interframe  integral                  32    'h56     
+#   illegal_frame   integral                  1     'd0      
+# -----------------------------------------------------------
+# 
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 11945: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.init_seq.req8 [req8] Req.data = 0x8000000
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 13195: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x4b
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(144) @ 13195: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence [debug] data send: ----------------------------------------------------------------------------------------------------------------------------------------
+# Name                             Type             Size  Value                                                                           
+# ----------------------------------------------------------------------------------------------------------------------------------------
+# req8                             apb_byte_access  -     @1131                                                                           
+#   address                        integral         32    'h0                                                                             
+#   direction                      apb_direction_t  32    WRITE                                                                           
+#   begin_time                     time             64    11945                                                                           
+#   end_time                       time             64    13195                                                                           
+#   depth                          int              32    'd2                                                                             
+#   parent sequence (name)         string           24    lab_on_seq_test_sequence                                                        
+#   parent sequence (full name)    string           75    uvm_test_top.verif_env0.apb_env0.master0.sequencer.lab_on_seq_test_sequence     
+#   sequencer                      string           50    uvm_test_top.verif_env0.apb_env0.master0.sequencer                              
+#   req                            apb_transfer     -     @1135                                                                           
+#     direction                    apb_direction_t  32    WRITE                                                                           
+#     address                      integral         32    'h0                                                                             
+#     waitstates                   integral         32    'd2                                                                             
+#     data                         integral         32    'h4b                                                                            
+#     slverror                     integral         1     1                                                                               
+#     delay                        integral         32    'd1                                                                             
+#     sel                          integral         16    'd0                                                                             
+#     strobe                       integral         4     'd1                                                                             
+#     begin_time                   time             64    11945                                                                           
+#     end_time                     time             64    13195                                                                           
+#     depth                        int              32    'd3                                                                             
+#     parent sequence (name)       string           4     req8                                                                            
+#     parent sequence (full name)  string           80    uvm_test_top.verif_env0.apb_env0.master0.sequencer.lab_on_seq_test_sequence.req8
+#     sequencer                    string           50    uvm_test_top.verif_env0.apb_env0.master0.sequencer                              
+#   rsp                            object           -     <null>                                                                          
+# ----------------------------------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 15695: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 16695: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 17945: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 20195: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 22195: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 25695: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 27195: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 28695: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 31945: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 34695: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 36195: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 39195: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 40695: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x00
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(213) @ 44195: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence.req8 [req8] Req.data = 0x2000
+# UVM_INFO C:/Users/francois/CloudStation/university_lectures_trainings/PolytechNice/2019_2020/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_line_monitor.sv(173) @ 45955: uvm_test_top.verif_env0.uart_env0.uart_agent0.tx_monitor [UART_MONITOR] Frame transmission :
+# -------------------------------------------------
+# Name                Type              Size  Value
+# -------------------------------------------------
+# <unnamed>           uart_frame        -     @997 
+#   direction         uart_direction_t  32    TXL  
+#   data              integral          9     'hb  
+#   parity_bit        integral          1     'h0  
+#   delay             integral          32    'd0  
+#   stop_bit_error    integral          1     'd0  
+#   parity_bit_error  integral          1     'd0  
+#   start_bit_error   integral          1     'd0  
+#   baudrate_error    integral          1     'd0  
+#   begin_time        time              64    13955
+#   end_time          time              64    45955
+# -------------------------------------------------
+# 
+# UVM_INFO C:\Users\francois\CloudStation\university_lectures_trainings\PolytechNice\2019_2020\VERIFICATION-TP-Day2\TP-UVM_Sequences\lab_sequence_lib.svh(164) @ 84195: uvm_test_top.verif_env0.apb_env0.master0.sequencer@@lab_on_seq_test_sequence [lab_on_seq_test_sequence] request done
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 89195: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   43
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DEBUG]     2
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UART_MONITOR]     1
+# [config_monitor0]     3
+# [debug]     1
+# [lab_on_seq_test_sequence]     2
+# [lab_test]     1
+# [master0]     1
+# [monitor]     5
+# [req8]    20
+# [rx_monitor]     1
+# [tx_monitor]     1
+# [uvm_test_top]     1
+# ** Note: $finish    : C:/tools/mentor/questasim64_10.7a/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 8919500 ps  Iteration: 53  Instance: /uart_tb
+# Break in Task uvm_pkg/uvm_root::run_test at C:/tools/mentor/questasim64_10.7a/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 09:58:24 on Oct 11,2019, Elapsed time: 0:02:30
+# Errors: 1, Warnings: 5

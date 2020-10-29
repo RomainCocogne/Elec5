@@ -1,0 +1,719 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/simulation/questa
+T_opt
+!s110 1601045231
+V5H8?1TDeSAK7]Nm;AkPMQ1
+Z1 04 7 4 work uart_tb fast 0
+Z2 04 12 4 work lab_test_pkg fast 0
+=1-1866da06355f-5f6e02ee-38e-266c
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;10.5c;63
+T_opt1
+!s110 1601038450
+Va2f1F@Zf9d0FBmNaZP8@W1
+R1
+R2
+=8-1866da06355f-5f6de872-5d-4f8
+R3
+R4
+n@_opt1
+R5
+R0
+T_opt2
+!s110 1601043529
+VXZ0D]>o]S>CRWOG4<c8b@2
+R1
+R2
+=2-1866da06355f-5f6dfc48-2ea-1b4c
+R3
+R4
+n@_opt2
+R5
+R0
+Xaed_apb_pkg
+!s115 apb_if
+Z6 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z7 DXx6 mtiUvm 7 uvm_pkg 0 22 oMKUklN?>LE6@MJe7=2><1
+Z8 !s110 1601045224
+!i10b 1
+!s100 :QIXL;Hj6jjGUz?Qm?dUX1
+IWWUJ[W_zTc4_BM:WTOG_93
+VWWUJ[W_zTc4_BM:WTOG_93
+S1
+R0
+w1537222610
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/aed_apb_pkg.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/aed_apb_pkg.sv
+Z9 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+Z10 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+Z11 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+Z12 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+Z13 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+Z14 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+Z15 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+Z16 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+Z17 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+Z18 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+Z19 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+Z20 FC:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+Z21 FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_defines.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_types.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_config.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_transfer.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_single_transfer_fifo.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_sequencer.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_driver.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_master_sequencer.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_master_driver.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_sequencer.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_driver.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_agent.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_env.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitored_transfer.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_env.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_agent.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_sequencer.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_master_sequencer.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_master_driver.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_sequencer.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_driver.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_driver.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_transfer.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_config.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_sequence.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_sequence.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_sequence_lib.svh
+Z22 L0 38
+Z23 OL;L;10.5c;63
+r1
+!s85 0
+31
+Z24 !s108 1601045224.000000
+Z25 !s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_if.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_if.sv|C:\Users\gse5\Desktop\verif_cc\VERIFICATION-TP-day3-Scoreboard\VERIFICATION-TP-day3-Scoreboard\TP-3-Scoreboard\lab_test.svh|C:\Users\gse5\Desktop\verif_cc\VERIFICATION-TP-day3-Scoreboard\VERIFICATION-TP-day3-Scoreboard\TP-3-Scoreboard\lab_scoreboard.svh|C:\Users\gse5\Desktop\verif_cc\VERIFICATION-TP-day3-Scoreboard\VERIFICATION-TP-day3-Scoreboard\TP-3-Scoreboard\lab_sequence_lib.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_base_test.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_env.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_config_monitor.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_default_sequence.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_base_sequence.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_reg_addresses.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge_defines.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_sequence_lib.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_sequence.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_sequence.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_config.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_transfer.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_driver.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_driver.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_sequencer.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_master_driver.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_master_sequencer.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_sequencer.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_agent.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_env.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitored_transfer.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_env.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_agent.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_monitor.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_driver.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_slave_sequencer.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_master_driver.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_master_sequencer.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_driver.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_sequencer.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_single_transfer_fifo.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_transfer.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_config.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_types.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_defines.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_sequence_lib.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_sequence.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_line_monitor.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_config.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_driver.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_sequencer.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_agent.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_env.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_env.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_agent.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_driver.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_sequencer.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_line_monitor.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_frame.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_config.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_types.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|C:/questasim64_10.5c/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_tb.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-day3-Scoreboard/VERIFICATION-TP-day3-Scoreboard/TP-3-Scoreboard/lab.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_pkg.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_pkg.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/aed_apb_pkg.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/aed_uart_pkg.sv|
+Z26 !s90 -reportprogress|300|+acc=mnprt|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/registers/ids|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge|+define+IMPORT_LAB_PKG|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/aed_uart_pkg.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/aed_apb_pkg.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_pkg.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_pkg.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-day3-Scoreboard/VERIFICATION-TP-day3-Scoreboard/TP-3-Scoreboard/lab.sv|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_tb.sv|
+!i113 0
+Z27 o+acc=mnprt -work work -timescale 1ns/10ps -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z28 !s92 +acc=mnprt -work work -timescale 1ns/10ps +incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv +incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv +incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl +incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb +incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/registers/ids +incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge +define+IMPORT_LAB_PKG -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+Xaed_uart_pkg
+!s115 uart_if
+!s115 uart_line_if
+R6
+R7
+R8
+!i10b 1
+!s100 LFn5YJmfSL^hIP5Wj]b732
+Ig0z[m5B?Xh4ob6R@;:3[l3
+Vg0z[m5B?Xh4ob6R@;:3[l3
+S1
+R0
+w1529069864
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/aed_uart_pkg.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/aed_uart_pkg.sv
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+Z29 FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_defines.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_types.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_config.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_frame.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_line_monitor.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_sequencer.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_driver.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_agent.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_env.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_env.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_agent.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_sequencer.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_driver.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_config.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_line_monitor.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_sequence.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_sequence_lib.svh
+L0 54
+R23
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 0
+R27
+R28
+R4
+vapb2wb_bridge
+Z30 !s110 1601045223
+!i10b 1
+!s100 T2^o8OQM^=32@40IJZQdF0
+I_80<Q4hj:AUQbI?5f5bSY3
+Z31 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1537218744
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge.v
+L0 4
+R23
+r1
+!s85 0
+31
+Z32 !s108 1601045223.000000
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge_defines.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge.v|
+!i113 0
+Z33 !s102 +cover=bcesfx -coveropt 1
+Z34 o+acc +cover=bcesfx -coveropt 1 -work work -timescale 1ns/10ps -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z35 !s92 +acc +cover=bcesfx -coveropt 1 -work work -timescale 1ns/10ps +incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+Xapb2wb_pkg
+R6
+R7
+Z36 !s110 1601045225
+!i10b 1
+!s100 @gjWG5i62Y1:Vb;1DdXGR2
+I2P;EeRn423i3><h0gCg:93
+V2P;EeRn423i3><h0gCg:93
+S1
+R0
+w1529069858
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_pkg.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_pkg.sv
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge_defines.svh
+L0 1
+R23
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 0
+R27
+R28
+R4
+Yapb_if
+R6
+R7
+Z37 DXx4 work 18 uart_ip_tb_sv_unit 0 22 UMU>:bBS:bgjJ3RCCjk`Z1
+R31
+r1
+!s85 0
+31
+!i10b 1
+!s100 WYBa=40RG[;DV=[j^[<hH3
+IC0eazlDNMGE?b_k_]@eXM1
+Z38 !s105 uart_ip_tb_sv_unit
+S1
+R0
+w1529069868
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_if.sv
+Z39 FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/apb/src/sv/apb_if.sv
+L0 33
+R23
+R24
+R25
+R26
+!i113 0
+R27
+R28
+R4
+Xlab_test_pkg
+R6
+R7
+Z40 DXx4 work 11 aed_apb_pkg 0 22 WWUJ[W_zTc4_BM:WTOG_93
+Z41 DXx4 work 12 aed_uart_pkg 0 22 g0z[m5B?Xh4ob6R@;:3[l3
+Z42 DXx4 work 17 uart_ip_verif_pkg 0 22 5S5SQ?oUolC`PCOJ>_5d]0
+R36
+!i10b 1
+!s100 onP9TH5:aQg?KPN?dTfNc1
+I^_9LKeSXz0Z8TZlGDLXib3
+V^_9LKeSXz0Z8TZlGDLXib3
+S1
+R0
+w1601044027
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-day3-Scoreboard/VERIFICATION-TP-day3-Scoreboard/TP-3-Scoreboard/lab.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-day3-Scoreboard/VERIFICATION-TP-day3-Scoreboard/TP-3-Scoreboard/lab.sv
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+Z43 FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_reg_addresses.svh
+FC:\Users\gse5\Desktop\verif_cc\VERIFICATION-TP-day3-Scoreboard\VERIFICATION-TP-day3-Scoreboard\TP-3-Scoreboard\lab_sequence_lib.svh
+FC:\Users\gse5\Desktop\verif_cc\VERIFICATION-TP-day3-Scoreboard\VERIFICATION-TP-day3-Scoreboard\TP-3-Scoreboard\lab_scoreboard.svh
+FC:\Users\gse5\Desktop\verif_cc\VERIFICATION-TP-day3-Scoreboard\VERIFICATION-TP-day3-Scoreboard\TP-3-Scoreboard\lab_test.svh
+Z44 L0 23
+R23
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 0
+R27
+R28
+R4
+vraminfr
+Z45 !s110 1601045222
+!i10b 1
+!s100 b<LJZGf^3N@iMBJ=]A_VT3
+I7cK><BQ@^hXB2L9WSoon]1
+R31
+R0
+Z46 w1518032334
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/raminfr.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/raminfr.v
+L0 83
+R23
+r1
+!s85 0
+31
+Z47 !s108 1601045222.000000
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/raminfr.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/raminfr.v|
+!i113 0
+R33
+R34
+Z48 !s92 +acc +cover=bcesfx -coveropt 1 -work work -timescale 1ns/10ps +incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vuart_apb
+R30
+!i10b 1
+!s100 ?XfmK<OeZL2E]<?TChNU_1
+Io_z8]OmUHYO5d:_HRJlzI2
+R31
+R0
+w1537304950
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/uart_apb/uart_apb.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/uart_apb/uart_apb.v
+L0 5
+R23
+r1
+!s85 0
+31
+R32
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge/apb2wb_bridge_defines.svh|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/uart_apb/uart_apb.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/apb2wb_bridge|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/design/uart_apb/uart_apb.v|
+!i113 0
+R33
+R34
+R35
+R4
+vuart_debug_if
+R45
+!i10b 1
+!s100 FDfCH=LN3FVR2VNH^iDFd3
+IlD@X6G_6VWfIM?^6bUFme3
+R31
+R0
+Z49 w1533680952
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_debug_if.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_debug_if.v
+L0 89
+R23
+r1
+!s85 0
+31
+R47
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/timescale.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_debug_if.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_debug_if.v|
+!i113 0
+R33
+R34
+R48
+R4
+Yuart_if
+R6
+R7
+R37
+R31
+r1
+!s85 0
+31
+!i10b 1
+!s100 bTTGM]LDi8jj?n^Kn<9DB1
+I5;f63ok8m]eMMB@JnQF^l3
+R38
+S1
+R0
+Z50 w1529069862
+Z51 8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_if.sv
+Z52 FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/vip/uart/src/sv/uart_if.sv
+R22
+R23
+R24
+R25
+R26
+!i113 0
+R27
+R28
+R4
+Xuart_ip_tb_sv_unit
+R6
+R7
+VUMU>:bBS:bgjJ3RCCjk`Z1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ngaJ]fJLzPTM?EG1B4Ma]2
+IUMU>:bBS:bgjJ3RCCjk`Z1
+!i103 1
+S1
+R0
+Z53 w1601045207
+Z54 8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_tb.sv
+Z55 FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_tb.sv
+Z56 FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v
+R39
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+R21
+R52
+R29
+R44
+R23
+R24
+R25
+R26
+!i113 0
+R27
+R28
+R4
+Xuart_ip_verif_pkg
+R6
+R7
+R41
+R40
+R36
+!i10b 1
+!s100 ;P6F?mlz_`AAho4Q_k<UT3
+I5S5SQ?oUolC`PCOJ>_5d]0
+V5S5SQ?oUolC`PCOJ>_5d]0
+S1
+R0
+w1537308532
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_pkg.sv
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_pkg.sv
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+R56
+R43
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_base_sequence.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_default_sequence.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_config_monitor.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_env.svh
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/aedvices/uart_tb/uart_ip_verif_base_test.svh
+L0 25
+R23
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 0
+R27
+R28
+R4
+Yuart_line_if
+R6
+R7
+R37
+R31
+r1
+!s85 0
+31
+!i10b 1
+!s100 I^hX9VaSc9AcoK`g=^]0m1
+IWigHbdb6@MCd8<GW23i;Y1
+R38
+S1
+R0
+R50
+R51
+R52
+L0 21
+R23
+R24
+R25
+R26
+!i113 0
+R27
+R28
+R4
+vuart_receiver
+R45
+!i10b 1
+!s100 ?F:m=Zc<hMFS7W52ENRMn1
+IQ^=7G8;_lh=FQ^f7Hj09k2
+R31
+R0
+R46
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_receiver.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_receiver.v
+L0 198
+R23
+r1
+!s85 0
+31
+R47
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/timescale.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_receiver.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_receiver.v|
+!i113 0
+R33
+R34
+R48
+R4
+vuart_regs
+R45
+!i10b 1
+!s100 =2]JdNRBM9:S;_^3o2m^J1
+IRcGP`T;4Yo;WQbWBK1B@I0
+R31
+R0
+R49
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_regs.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_regs.v
+L0 231
+R23
+r1
+!s85 0
+31
+R47
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/timescale.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_regs.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_regs.v|
+!i113 0
+R33
+R34
+R48
+R4
+vuart_rfifo
+R30
+!i10b 1
+!s100 ;YIOl?5XNBhbYXNi:cNeX3
+ITO1gPIi3fcBb;T7e6cS^Q2
+R31
+R0
+R46
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_rfifo.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_rfifo.v
+L0 150
+R23
+r1
+!s85 0
+31
+R47
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/timescale.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_rfifo.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_rfifo.v|
+!i113 0
+R33
+R34
+R48
+R4
+vuart_sync_flops
+R30
+!i10b 1
+!s100 TLf0^n:8AUA<067ooC4iW1
+ITeV]DRVnS0i0Wm:LTgdJA0
+R31
+R0
+R46
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_sync_flops.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_sync_flops.v
+L0 71
+R23
+r1
+!s85 0
+31
+R32
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/timescale.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_sync_flops.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_sync_flops.v|
+!i113 0
+R33
+R34
+R48
+R4
+vuart_tb
+R6
+R7
+R37
+R40
+R41
+R42
+DXx4 work 10 apb2wb_pkg 0 22 2P;EeRn423i3><h0gCg:93
+R31
+r1
+!s85 0
+31
+!i10b 1
+!s100 BPQH`9EXCVB>ZjWfzLf=U2
+IWnDlVKCEg^c;2m]iWkKl93
+R38
+S1
+R0
+R53
+R54
+R55
+L0 32
+R23
+R24
+R25
+R26
+!i113 0
+R27
+R28
+R4
+vuart_tfifo
+R30
+!i10b 1
+!s100 ]QiE>>=jRW0E3czGcgRCN2
+IPSHB]PhUc5JkH_dBLb8Wi3
+R31
+R0
+R46
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_tfifo.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_tfifo.v
+L0 144
+R23
+r1
+!s85 0
+31
+R32
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/timescale.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_tfifo.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_tfifo.v|
+!i113 0
+R33
+R34
+R48
+R4
+vuart_top
+R45
+!i10b 1
+!s100 O_0JLWHXg^M=Sl8jQ]=gk0
+Ih[0`1^N8RLcm0GIVT5m2d0
+R31
+R0
+R49
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_top.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_top.v
+L0 140
+R23
+r1
+!s85 0
+31
+R47
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/timescale.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_top.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_top.v|
+!i113 0
+R33
+R34
+R48
+R4
+vuart_transmitter
+R30
+!i10b 1
+!s100 Wd2JieeR;zUlSXjYeMTD60
+IzKj`=3Yj0SM>>HajJ<7D^3
+R31
+R0
+R46
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_transmitter.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_transmitter.v
+L0 154
+R23
+r1
+!s85 0
+31
+R32
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/timescale.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_transmitter.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_transmitter.v|
+!i113 0
+R33
+R34
+R48
+R4
+vuart_wb
+R30
+!i10b 1
+!s100 baSjj``f7Y3EUfE:i8X:K3
+I7UDhA:[?U>9HeR:ld^Hh^3
+R31
+R0
+R46
+8C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_wb.v
+FC:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_wb.v
+L0 142
+R23
+r1
+!s85 0
+31
+R32
+!s107 C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_defines.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/timescale.v|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_wb.v|
+!s90 -reportprogress|300|+acc|+cover=bcesfx|-coveropt|1|-work|work|-timescale|1ns/10ps|+incdir+C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl|C:/Users/gse5/Desktop/verif_cc/VERIFICATION-TP-Day2/VERIFICATION-TP-Day2/platform/opencores/uart16550/rtl/uart_wb.v|
+!i113 0
+R33
+R34
+R48
+R4

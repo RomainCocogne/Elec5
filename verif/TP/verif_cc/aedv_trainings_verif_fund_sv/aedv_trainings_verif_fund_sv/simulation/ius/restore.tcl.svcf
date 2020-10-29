@@ -1,0 +1,166 @@
+# SimVision Command Script (Sun Nov 27 09:45:25 PM CET 2016)
+#
+# Version 13.20.s010
+#
+# You can restore this configuration with:
+#
+#      irun +incdir+../../opencores/amber/hw/vlog/lib +incdir+../../opencores/amber/hw/vlog/system +incdir+../../opencores/amber/hw/vlog/amber23 +incdir+../../opencores/amber/hw/vlog/tb +incdir+../../opencores/amber/hw/vlog/ethmac +incdir+../../aedvices/socv -define BOOT_MEM_FILE="obj/boot-loader-serial.mem" -define MAIN_MEM_FILE="obj/lab.mem" -define AMBER_LOAD_MAIN_MEM=1 -define AMBER_LOG_FILE="tests.log" -define AMBER_TIMEOUT=0 -define AMBER_SIM_CTRL=4 -define AMBER_TEST_NAME="lab" -f filelist.txt ../../opencores/amber/hw/vlog/tb/tb.v -timescale 1ns/10ps -top tb -licqueue -64 -input cmd.txt -access +rwc +acc -input restore.tcl
+#
+
+
+#
+# Preferences
+#
+preferences set toolbar-Standard-WatchWindow {
+  usual
+  shown 0
+}
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set cursorctl-dont-show-sync-warning 1
+preferences set toolbar-Windows-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-txe_waveform_toggle-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set plugin-enable-groupscope 0
+preferences set sb-display-values 1
+preferences set plugin-enable-interleaveandcompare 0
+preferences set toolbar-SimControl-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-Windows-WaveWindow {
+  usual
+  position -pos 2
+}
+preferences set toolbar-WaveZoom-WaveWindow {
+  usual
+  position -row 1 -anchor w
+}
+preferences set whats-new-dont-show-at-startup 1
+preferences set toolbar-TimeSearch-WatchWindow {
+  usual
+  shown 0
+}
+
+#
+# Simulator
+#
+database require simulator -hints {
+	simulator "irun +incdir+../../opencores/amber/hw/vlog/lib +incdir+../../opencores/amber/hw/vlog/system +incdir+../../opencores/amber/hw/vlog/amber23 +incdir+../../opencores/amber/hw/vlog/tb +incdir+../../opencores/amber/hw/vlog/ethmac +incdir+../../aedvices/socv -define BOOT_MEM_FILE=\"obj/boot-loader-serial.mem\" -define MAIN_MEM_FILE=\"obj/lab.mem\" -define AMBER_LOAD_MAIN_MEM=1 -define AMBER_LOG_FILE=\"tests.log\" -define AMBER_TIMEOUT=0 -define AMBER_SIM_CTRL=4 -define AMBER_TEST_NAME=\"lab\" -f filelist.txt ../../opencores/amber/hw/vlog/tb/tb.v -timescale 1ns/10ps -top tb -gui -licqueue -64 -input cmd.txt -access +rwc +acc -input restore.tcl"
+}
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Design Browser windows
+#
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 730x500+261+33}] != ""} {
+    window geometry "Design Browser 1" 730x500+261+33
+}
+window target "Design Browser 1" on
+browser using {Design Browser 1}
+browser set \
+    -signalsort name
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 2559x1317+0+31}] != ""} {
+    window geometry "Waveform 1" 2559x1317+0+31
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar select designbrowser
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ps \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals [subst  {
+	{[format {tb.u_system.u_uart0.i_clk}]}
+	{[format {tb.u_system.u_uart0.i_uart_cts_n}]}
+	{[format {tb.u_system.u_uart0.i_uart_rxd}]}
+	{[format {tb.u_system.u_uart0.i_wb_adr[31:0]}]}
+	{[format {tb.u_system.u_uart0.i_wb_cyc}]}
+	{[format {tb.u_system.u_uart0.i_wb_dat[31:0]}]}
+	{[format {tb.u_system.u_uart0.i_wb_sel[3:0]}]}
+	{[format {tb.u_system.u_uart0.i_wb_stb}]}
+	{[format {tb.u_system.u_uart0.i_wb_we}]}
+	{[format {tb.u_system.u_uart0.o_uart_int}]}
+	{[format {tb.u_system.u_uart0.o_uart_rts_n}]}
+	{[format {tb.u_system.u_uart0.o_uart_txd}]}
+	{[format {tb.u_system.u_uart0.o_wb_ack}]}
+	{[format {tb.u_system.u_uart0.o_wb_dat[31:0]}]}
+	{[format {tb.u_system.u_uart0.o_wb_err}]}
+	{[format {tb.u_system.u_uart1.wb_ack_o}]}
+	{[format {tb.u_system.u_uart1.wb_adr_i[31:0]}]}
+	{[format {tb.u_system.u_uart1.wb_clk_i}]}
+	{[format {tb.u_system.u_uart1.wb_cyc_i}]}
+	{[format {tb.u_system.u_uart1.wb_dat_i[31:0]}]}
+	{[format {tb.u_system.u_uart1.wb_dat_o[31:0]}]}
+	{[format {tb.u_system.u_uart1.wb_rst_i}]}
+	{[format {tb.u_system.u_uart1.wb_sel_i[3:0]}]}
+	{[format {tb.u_system.u_uart1.wb_stb_i}]}
+	{[format {tb.u_system.u_uart1.wb_we_i}]}
+	{[format {tb.u_system.m_wb_ack[1:0]}]}
+	{[format {tb.u_system.m_wb_adr[1:0]}]}
+	{[format {tb.u_system.m_wb_cyc[1:0]}]}
+	{[format {tb.u_system.m_wb_dat_r[1:0]}]}
+	{[format {tb.u_system.m_wb_dat_w[1:0]}]}
+	{[format {tb.u_system.m_wb_err[1:0]}]}
+	{[format {tb.u_system.m_wb_sel[1:0]}]}
+	} ]]
+waveform hierarchy expand $id
+set id2 [lindex [waveform hierarchy content $id] 0]
+waveform hierarchy collapse $id2
+waveform hierarchy collapse $id
+set id [waveform add -signals [subst  {
+	{[format {tb.u_system.m_wb_stb[1:0]}]}
+	{[format {tb.u_system.m_wb_we[1:0]}]}
+	{[format {tb.u_system.s_wb_ack[8:0]}]}
+	{[format {tb.u_system.s_wb_adr[8:0]}]}
+	{[format {tb.u_system.s_wb_cyc[8:0]}]}
+	{[format {tb.u_system.s_wb_dat_r[8:0]}]}
+	{[format {tb.u_system.s_wb_dat_w[8:0]}]}
+	{[format {tb.u_system.s_wb_err[8:0]}]}
+	{[format {tb.u_system.s_wb_sel[8:0]}]}
+	} ]]
+waveform hierarchy collapse $id
+set id [waveform add -signals [subst  {
+	{[format {tb.u_system.s_wb_sel_uart1[3:0]}]}
+	{[format {tb.u_system.s_wb_stb[8:0]}]}
+	{[format {tb.u_system.s_wb_we[8:0]}]}
+	} ]]
+
+waveform xview limits 1050809337ps 1317602500ps
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 730x250+261+564
+
+#
+# Layout selection
+#
+

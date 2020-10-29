@@ -1,0 +1,1 @@
+cmd_/home/gse5/Zedboard/source/character_driver/mydevice.ko := arm-linux-gnueabihf-ld -r  -EL -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/gse5/Zedboard/source/character_driver/mydevice.ko /home/gse5/Zedboard/source/character_driver/mydevice.o /home/gse5/Zedboard/source/character_driver/mydevice.mod.o ;  true

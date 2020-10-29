@@ -1,0 +1,3 @@
+[submodule "uart16550"]
+	path = uart16550_core
+	url = git@gitlab.local:OpenCoresProjects/UART-16550-core.git

@@ -1,0 +1,6 @@
+*.wlf
+wlf*
+work/
+transcript
+certe_dump.xml
+tcl_stacktrace.txt
