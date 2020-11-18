@@ -1,0 +1,6 @@
+Normal:
+LoRa:
+Idle: 20.4 mA
+Power down: 19.0 mA
+Power save: 19.4 mA
+Standby: 19.2 mA
