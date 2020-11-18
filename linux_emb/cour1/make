@@ -1,0 +1,5 @@
+obj-m = hello.o
+all:
+	make -C /usr/src/linux-headers-5.4.0-47-generic M=$(PWD) modules
+clean:
+	make -C /usr/src/linux-headers-5.4.0-47-generic M=$(PWD) clean

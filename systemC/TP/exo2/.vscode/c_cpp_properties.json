@@ -1,0 +1,28 @@
+{
+    "env": {
+        "SYSTEMC_PATH": "~/Desktop/Elec5/systemC/systemc-2.3.3"
+    },
+    "configurations": [
+        {
+            "name": "systemc",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${env:SYSTEMC_PATH}/src",
+                    "${env:SYSTEMC_PATH}/include"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "${workspaceFolder}/**",
+		        "${env:SYSTEMC_PATH}/src/**",
+                "${env:SYSTEMC_PATH}/include/**"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
