@@ -1,7 +1,7 @@
 #ifndef _DF_CONSTANT_H_
 #define _DF_CONSTANT_H_
 
-#include <systemc>
+#include <systemc.h>
 
 SC_MODULE(DF_Constant){
     sc_fifo_out<double> const_value;
