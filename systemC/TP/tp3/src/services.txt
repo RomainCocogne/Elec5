@@ -1,0 +1,15 @@
+
+	virtual void writeToSlave(unsigned int addr_, int data_);
+	virtual int readToSlave(unsigned int addr_);
+	virtual const sc_event& irq0Event() const;
+	virtual const sc_event& irq1Event() const;
+
+
+	void sendDataToMaster(int data_);
+	void sendAckToMaster();
+	const sc_event& rwEvent() const;
+	bool isRead() const;
+	int getData() const;
+	unsigned int getAddress() const;
+	void irq0Notify();
+	void irq1Notify();
